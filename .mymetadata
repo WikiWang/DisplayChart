@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="DisplayChart"
+  id="myeclipse.1411275313075"
+  context-root="/DisplayChart"
+  j2ee-spec="5.0"
+  archive="DisplayChart.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

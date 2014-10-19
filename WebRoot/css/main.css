@@ -1,0 +1,72 @@
+BODY {
+	top:10px;
+	text-align:center;
+    FONT-SIZE: 20px; 
+    FONT-FAMILY: Tahoma; 
+    width: 100%;
+    border: thin;
+}
+/*body样式*/
+
+.column1{
+	width:667px;
+	margin:5px auto;
+	font-size: 20px;
+}
+.column1 select{
+	width:140px;
+	font-size: 18px;
+}
+.column1 a{
+	padding-left:15px;
+	padding-right:15px;
+	color:blue;
+	text-decoration: underline;
+}
+/*页面第一行样式*/
+
+.column2{
+	width:667px;
+	margin:5px auto;
+	font-size: 20px;
+}
+.column2 select{
+	width:140px;
+	font-size: 18px;
+}
+.column2 a{
+	padding-left:25px;
+	padding-right:25px;
+}
+.mybutton{
+	width:100px;
+	text-align: center;
+	font-size: 18px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+/*页面第二行样式*/
+
+.column3{
+	width:667px;
+	margin:5px auto;
+	font-size: 20px;
+}
+a.pendcore{
+	color:black;
+	padding-left: 25px;
+	padding-right: 60px;
+}
+a.charts{
+	padding-left:10px;
+	padding-right:10px;
+	color:blue;
+	text-decoration: underline;
+}
+/*页面第三行样式*/
+
+.heatmap{
+	width: 667px; 
+	margin: 0 auto
+}
+/*heatmap样式*/
