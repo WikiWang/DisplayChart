@@ -1,42 +1,113 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
-    <link type="text/css" rel="stylesheet" href="css/treemap.css"/>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/jquery.1.9.1.min.js"></script>
-    <script type="text/javascript" src="d3/d3.js"></script>
-    <script type="text/javascript" src="d3/d3.layout.js"></script>
-    <script type="text/javascript" src="js/drawtreemap.js"></script>
-  </head>
+<html class="ocks-org do-not-copy">
+<meta charset="utf-8">
+<title>Zoomable Treemaps</title>
+<style>
+@import url(css/style2.css);
+
+#chart {
+	width: 960px;
+	height: 500px;
+	background: #ddd;
+}
+
+text {
+	pointer-events: none;
+}
+
+.grandparent text {
+	font-weight: bold;
+}
+
+rect {
+	fill: none;
+	stroke: #fff;
+}
+
+rect.parent,.grandparent rect {
+	stroke-width: 2px;
+}
+
+.grandparent rect {
+	fill: orange;
+}
+
+.grandparent:hover rect {
+	fill: #ee9700;
+}
+
+.children rect.parent,.grandparent rect {
+	cursor: pointer;
+}
+
+.children rect.parent {
+	fill: #bbb;
+	fill-opacity: .5;
+}
+
+.children:hover rect.child {
+	fill: #bbb;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="css/treemap.css"/> 
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="js/jquery.1.9.1.min.js"></script>
+<script src="d3/d3.v3.min.js"></script>
+<script src="js/drawtreemap.js" charset="GBK"></script>
 <body>
-	<div id="body">
-		<div class="column1">
-			<select id="dataView" name="dataView">
-				<option value="1">环境用户</option>
-				<option value="2">作业规模</option>
-				<option value="3">应用服务</option>
-			</select> <a class="ajax-time" id="" href="#">实时活跃</a> <a class="ajax-time"
-				id="" href="#">2014年</a> <a class="ajax-time" id="" href="#">2013年</a>
-			<a class="ajax-time" id="" href="#">2012年</a> <a class="ajax-time"
-				id="" href="#">全部</a>
-		</div>
-		<div class="column2">
-			<a>数据周期</a> <select name="startTime">
-				<option value="1">2013.1</option>
-				<option value="2">2013.2</option>
-				<option value="3">2013.3</option>
-			</select> <a>——</a> <select name="endTime">
-				<option value="1">2014.1</option>
-				<option value="2">2014.2</option>
-				<option value="3">2014.3</option>
-			</select> <input class="mybutton" type="button" value="确定" name="timeButton">
-		</div>
-		<div class="column3">
-			<a class="pendcore">环境当前排队运行核数1237核</a> <a href="#" class="charts">热度矩阵图</a>
-			<a href="#" class="charts">可放缩TREEMAP</a>
-		</div>
+	<div class="column1">
+		<select id="dataView" name="dataView" onchange="change()">
+			<option value="1">环境用户</option>
+			<option value="2">应用服务</option>
+			<option value="3">作业规模</option>
+		</select> 
+		<a id="realtime" onclick="realdata()" href="#">实时活跃</a> 
+		<a id="history1" onclick="gethistory1()" href="#"></a> 
+		<a id="history2" onclick="gethistory2()" href="#"></a>
+		<a id="history3" onclick="gethistory3()" href="#"></a> 
+		<a id="historyall" onclick="gethistoryall()" href="#">全部</a>
+	</div>
+	<div class="column2">
+		<a>数据周期：</a> <select id="startTime">
+		</select> <a>年</a> <select>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select> <a>月</a> <a>——</a> <select id="endTime">
+		</select> <a>年</a> <select>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select> <a>月</a> <input class="mybutton" type="button" value="确定"
+			name="timeButton">
+	</div>
+	<div class="column3">
+		<a class="pendcore">环境当前排队运行核数1237核</a>
+		<a href="heatmap.html" class="charts" target="_blank">热度矩阵图</a>
+		<a href="treemap.html" class="charts">可放缩TREEMAP</a>
+	</div>
+	<div id="chart"></div>
+	<div class="foot">
+		<a>更新时间：</a> <label id="refreshTime"></label> <a class="seeDetails"
+			href="">查看详细列表</a>
 	</div>
 </body>
 </html>

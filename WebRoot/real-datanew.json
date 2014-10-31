@@ -1,0 +1,418 @@
+{
+"name":"real-data",
+"children":	[{
+		"name":	"casnw",
+		"children":	[{
+				"name":	"fang_ap",
+				"children":	[{
+						"name":	"Lammps",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":32
+							},{
+								"name":	"2-63",
+								"coresum":50
+							},{
+								"name":	"2-63",
+								"coresum":38
+							},{
+								"name":	"2-63",
+								"coresum":32
+							}]
+					}]
+			}, {
+				"name":	"hrbust",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":24
+							},{
+								"name":	"2-63",
+								"coresum":50
+							},{
+								"name":	"2-63",
+								"coresum":38
+							},{
+								"name":	"2-63",
+								"coresum":32
+							}]
+					}]
+			}, {
+				"name":	"leim01",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"64-127",
+								"coresum":448
+							}]
+					}]
+			}, {
+				"name":	"stm215",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":416
+							}]
+					}]
+			}, {
+				"name":	"yanxh",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":12
+							},{
+								"name":	"2-63",
+								"coresum":50
+							},{
+								"name":	"2-63",
+								"coresum":38
+							},{
+								"name":	"2-63",
+								"coresum":32
+							}]
+					}]
+			}, {
+				"name":	"zhengwj",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":1448
+							}]
+					}]
+			}]
+	}, {
+		"name":	"cigit",
+		"children":	[{
+				"name":	"yankf",
+				"children":	[{
+						"name":	"DL_POLY",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":48
+							},{
+								"name":	"2-63",
+								"coresum":50
+							},{
+								"name":	"2-63",
+								"coresum":38
+							},{
+								"name":	"2-63",
+								"coresum":32
+							}]
+					}]
+			}]
+	}, {
+		"name":	"deepcomp7000",
+		"children":	[{
+				"name":	"fangch",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":724
+							}]
+					}, {
+						"name":	"mgaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":448
+							}]
+					}]
+			}, {
+				"name":	"fang_ap",
+				"children":	[{
+						"name":	"Gromacs",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":144
+							}, {
+								"name":	"64-127",
+								"coresum":64
+							}]
+					}]
+			}, {
+				"name":	"godor9",
+				"children":	[{
+						"name":	"generic",
+						"children":	[{
+								"name":	"1",
+								"coresum":4
+							}]
+					}]
+			}, {
+				"name":	"hjzhu",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":480
+							}]
+					}]
+			}, {
+				"name":	"sfyygq",
+				"children":	[{
+						"name":	"DOCK",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":144
+							}]
+					}]
+			}, {
+				"name":	"stm215",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":148
+							}]
+					}]
+			}, {
+				"name":	"sxicc603",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":8
+							}]
+					}, {
+						"name":	"WIEN2K",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":160
+							}]
+					}]
+			}, {
+				"name":	"yankf",
+				"children":	[{
+						"name":	"DL_POLY",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":24
+							}]
+					}]
+			}, {
+				"name":	"zhangsd2",
+				"children":	[{
+						"name":	"Molpro",
+						"children":	[{
+								"name":	"1",
+								"coresum":1
+							}]
+					}]
+			}, {
+				"name":	"zhengwj",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":464
+							}]
+					}]
+			}]
+	}, {
+		"name":	"ibp",
+		"children":	[{
+				"name":	"yankf",
+				"children":	[{
+						"name":	"DL_POLY",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":60
+							}]
+					}]
+			}]
+	}, {
+		"name":	"imr",
+		"children":	[{
+				"name":	"diyingtong",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":16
+							}]
+					}]
+			}, {
+				"name":	"steven",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"128-255",
+								"coresum":200
+							}]
+					}]
+			}, {
+				"name":	"yankf",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":8
+							}]
+					}]
+			}, {
+				"name":	"YPZeng",
+				"children":	[{
+						"name":	"generic",
+						"children":	[{
+								"name":	"1",
+								"coresum":200
+							}]
+					}]
+			}, {
+				"name":	"ZhangYu",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":10
+							}]
+					}]
+			}]
+	}, {
+		"name":	"issp",
+		"children":	[{
+				"name":	"kevnyang",
+				"children":	[{
+						"name":	"vasp.5.2",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":72
+							}]
+					}]
+			}, {
+				"name":	"YPZeng",
+				"children":	[{
+						"name":	"generic",
+						"children":	[{
+								"name":	"1",
+								"coresum":1
+							}]
+					}]
+			}]
+	}, {
+		"name":	"kib",
+		"children":	[{
+				"name":	"cqxlluo",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":64
+							}]
+					}]
+			}, {
+				"name":	"cr147369",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":48
+							}]
+					}]
+			}, {
+				"name":	"diyingtong",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":80
+							}]
+					}]
+			}, {
+				"name":	"fangch",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":408
+							}]
+					}]
+			}, {
+				"name":	"hrbust",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":16
+							}]
+					}]
+			}, {
+				"name":	"hyf2014",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":12
+							}]
+					}]
+			}, {
+				"name":	"jingcy",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":8
+							}]
+					}]
+			}, {
+				"name":	"kmustlin",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":32
+							}]
+					}]
+			}, {
+				"name":	"usclw",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":8
+							}]
+					}]
+			}, {
+				"name":	"wxpcq",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":96
+							}]
+					}]
+			}, {
+				"name":	"yanxh",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":4
+							}]
+					}]
+			}, {
+				"name":	"ynmdxft",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":128
+							}]
+					}]
+			}, {
+				"name":	"zhengwj",
+				"children":	[{
+						"name":	"gaussian",
+						"children":	[{
+								"name":	"2-63",
+								"coresum":136
+							}]
+					}]
+			}]
+	}]
+}

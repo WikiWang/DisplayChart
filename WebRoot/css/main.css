@@ -1,16 +1,17 @@
 BODY {
 	top:10px;
+	width:667px;
+	margin:10px auto;
 	text-align:center;
     FONT-SIZE: 20px; 
     FONT-FAMILY: Tahoma; 
-    width: 100%;
     border: thin;
 }
 /*body样式*/
 
 .column1{
 	width:667px;
-	margin:5px auto;
+	margin:10px auto;
 	font-size: 20px;
 }
 .column1 select{
@@ -27,17 +28,13 @@ BODY {
 
 .column2{
 	width:667px;
-	margin:5px auto;
+	margin:10px auto;
 	font-size: 20px;
 }
 .column2 select{
-	width:140px;
 	font-size: 18px;
 }
-.column2 a{
-	padding-left:25px;
-	padding-right:25px;
-}
+
 .mybutton{
 	width:100px;
 	text-align: center;
@@ -49,7 +46,7 @@ BODY {
 
 .column3{
 	width:667px;
-	margin:5px auto;
+	margin:10px auto;
 	font-size: 20px;
 }
 a.pendcore{
@@ -70,3 +67,13 @@ a.charts{
 	margin: 0 auto
 }
 /*heatmap样式*/
+
+.foot{
+	width:667px;
+	margin: 10 auto;
+	text-align: left;
+}
+.seeDetails{
+	float:right;
+	display:inline-block;
+}
